@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="80401" started-at="2018-02-15T13:07:43Z" finished-at="2018-02-15T13:09:03Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:helperlib.TestRun@8bd1b6a]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Surefire test" duration-ms="80401" started-at="2018-02-15T13:07:43Z" finished-at="2018-02-15T13:09:03Z">
+      <class name="helperlib.TestRun">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:helperlib.TestRun@8bd1b6a]" name="setUpClass" is-config="true" duration-ms="145" started-at="2018-02-15T13:07:43Z" finished-at="2018-02-15T13:07:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:helperlib.TestRun@8bd1b6a]" name="setup" is-config="true" duration-ms="1" started-at="2018-02-15T13:07:43Z" finished-at="2018-02-15T13:07:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeTestScenario()[pri:0, instance:helperlib.TestRun@8bd1b6a]" name="beforeTestScenario" is-config="true" duration-ms="3785" started-at="2018-02-15T13:07:43Z" finished-at="2018-02-15T13:07:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestScenario -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:helperlib.TestRun@8bd1b6a]" name="feature" duration-ms="36604" started-at="2018-02-15T13:07:47Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-02-15T13:08:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login Test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="afterTestScenario()[pri:0, instance:helperlib.TestRun@8bd1b6a]" name="afterTestScenario" is-config="true" duration-ms="2327" started-at="2018-02-15T13:08:24Z" finished-at="2018-02-15T13:08:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestScenario -->
+        <test-method status="PASS" signature="beforeTestScenario()[pri:0, instance:helperlib.TestRun@8bd1b6a]" name="beforeTestScenario" is-config="true" duration-ms="3350" started-at="2018-02-15T13:08:26Z" finished-at="2018-02-15T13:08:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestScenario -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:helperlib.TestRun@8bd1b6a]" name="feature" duration-ms="31550" started-at="2018-02-15T13:08:29Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-02-15T13:09:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Search Test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="afterTestScenario()[pri:0, instance:helperlib.TestRun@8bd1b6a]" name="afterTestScenario" is-config="true" duration-ms="2317" started-at="2018-02-15T13:09:01Z" finished-at="2018-02-15T13:09:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestScenario -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:helperlib.TestRun@8bd1b6a]" name="teardown" is-config="true" duration-ms="6" started-at="2018-02-15T13:09:03Z" finished-at="2018-02-15T13:09:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:helperlib.TestRun@8bd1b6a]" name="tearDownClass" is-config="true" duration-ms="243" started-at="2018-02-15T13:09:03Z" finished-at="2018-02-15T13:09:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- helperlib.TestRun -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

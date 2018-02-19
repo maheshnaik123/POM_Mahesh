@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Craftsvilla</td>
+              <td>1</td>
+            <td>15 Feb 2018, 18:32</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">Login.click_on_Login()</td>
+              <td>1</td>
+              <td class="duration" data-value="64381303">064ms</td>
+              <td class="duration" data-value="64381303">064ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Login.click_on_Signup_link()</td>
+              <td>1</td>
+              <td class="duration" data-value="5129407833">5s 129ms</td>
+              <td class="duration" data-value="5129407833">5s 129ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Login.enterPassword()</td>
+              <td>1</td>
+              <td class="duration" data-value="470040271">470ms</td>
+              <td class="duration" data-value="470040271">470ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Login.enterUsername()</td>
+              <td>1</td>
+              <td class="duration" data-value="546919319">546ms</td>
+              <td class="duration" data-value="546919319">546ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Login.loginShouldBeSuccessful()</td>
+              <td>1</td>
+              <td class="duration" data-value="29256858">029ms</td>
+              <td class="duration" data-value="29256858">029ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Login.login_pop_up_must_be_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="5066471274">5s 066ms</td>
+              <td class="duration" data-value="5066471274">5s 066ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Login.navigate_to_Craftsvilla()</td>
+              <td>2</td>
+              <td class="duration" data-value="14191655374">14s 191ms</td>
+              <td class="duration" data-value="7095827687">7s 095ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Login.pageObjInstance()</td>
+              <td>2</td>
+              <td class="duration" data-value="14626034">014ms</td>
+              <td class="duration" data-value="7313017">007ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Login.takeScreenshotOnFailure(Scenario)</td>
+              <td>2</td>
+              <td class="duration" data-value="19999898050">19s 999ms</td>
+              <td class="duration" data-value="9999949025">9s 999ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Search.in_craftsvialla_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="32266429">032ms</td>
+              <td class="duration" data-value="32266429">032ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Search.in_search_Enter_the_product_to_be_searched()</td>
+              <td>1</td>
+              <td class="duration" data-value="4933889998">4s 933ms</td>
+              <td class="duration" data-value="4933889998">4s 933ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Search.pageObjInstance()</td>
+              <td>2</td>
+              <td class="duration" data-value="939444">000ms</td>
+              <td class="duration" data-value="469722">000ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Search.searched_product_list_page_must_be_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="75265">000ms</td>
+              <td class="duration" data-value="75265">000ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Search.takeScreenshotOnFailure(Scenario)</td>
+              <td>2</td>
+              <td class="duration" data-value="19999579201">19s 999ms</td>
+              <td class="duration" data-value="9999789600">9s 999ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>14</td>
+            <td>19</td>
+            <td class="duration">1m 10s 479ms</td>
+            <td class="duration">3s 709ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

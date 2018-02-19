@@ -1,0 +1,26 @@
+@Login_Feature
+Feature: Login Test
+
+  Background:                     # Login.feature:4
+    Given Navigate to Craftsvilla # Login.navigate_to_Craftsvilla()
+
+  @Smoke_Scenario
+  Scenario: Login with valid credentials # Login.feature:28
+    And Click on Signup link             # Login.click_on_Signup_link()
+    Then Login pop up must be displayed  # Login.login_pop_up_must_be_displayed()
+    And Enter Username                   # Login.enterUsername()
+    And Enter Password                   # Login.enterPassword()
+    And Click on Login                   # Login.click_on_Login()
+    Then Login should be successful      # Login.loginShouldBeSuccessful()
+@Search_Feature
+Feature: Search Test
+  Description: To check the functionality of search
+
+  Background:                     # Search.feature:5
+    Given Navigate to Craftsvilla # Login.navigate_to_Craftsvilla()
+
+  @Smoke_Scenario
+  Scenario: Search for a product                      # Search.feature:9
+    Given In craftsvialla page                        # Search.in_craftsvialla_page()
+    When In search, Enter the product to be searched  # Search.in_search_Enter_the_product_to_be_searched()
+    Then Searched product list page must be displayed # Search.searched_product_list_page_must_be_displayed()
