@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="67.993145">
-<testcase classname="Login Test" name="Login with valid credentials" time="36.462312">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="222.273862">
+<testcase classname="Login Test" name="Login with valid credentials" time="104.993211">
 <system-out><![CDATA[Given Navigate to Craftsvilla...............................................passed
 And Click on Signup link....................................................passed
 Then Login pop up must be displayed.........................................passed
@@ -10,7 +10,7 @@ And Click on Login..........................................................pass
 Then Login should be successful.............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Search Test" name="Search for a product" time="31.530833">
+<testcase classname="Search Test" name="Search for a product" time="117.280651">
 <system-out><![CDATA[Given Navigate to Craftsvilla...............................................passed
 Given In craftsvialla page..................................................passed
 When In search, Enter the product to be searched............................passed
