@@ -1,26 +1,26 @@
 @Login_Feature
 Feature: Login Test
 
-  Background:                     # Login.feature:4
-    Given Navigate to Craftsvilla # Login.navigate_to_Craftsvilla()
+  Background:                     [90m# Login.feature:4[0m
+    [32mGiven [0m[32mNavigate to Craftsvilla[0m [90m# Login.navigate_to_Craftsvilla()[0m
 
   @Smoke_Scenario
-  Scenario: Login with valid credentials # Login.feature:28
-    And Click on Signup link             # Login.click_on_Signup_link()
-    Then Login pop up must be displayed  # Login.login_pop_up_must_be_displayed()
-    And Enter Username                   # Login.enterUsername()
-    And Enter Password                   # Login.enterPassword()
-    And Click on Login                   # Login.click_on_Login()
-    Then Login should be successful      # Login.loginShouldBeSuccessful()
+  Scenario: Login with valid credentials [90m# Login.feature:28[0m
+    [32mAnd [0m[32mClick on Signup link[0m             [90m# Login.click_on_Signup_link()[0m
+    [32mThen [0m[32mLogin pop up must be displayed[0m  [90m# Login.login_pop_up_must_be_displayed()[0m
+    [32mAnd [0m[32mEnter Username[0m                   [90m# Login.enterUsername()[0m
+    [32mAnd [0m[32mEnter Password[0m                   [90m# Login.enterPassword()[0m
+    [32mAnd [0m[32mClick on Login[0m                   [90m# Login.click_on_Login()[0m
+    [32mThen [0m[32mLogin should be successful[0m      [90m# Login.loginShouldBeSuccessful()[0m
 @Search_Feature
 Feature: Search Test
   Description: To check the functionality of search
 
-  Background:                     # Search.feature:5
-    Given Navigate to Craftsvilla # Login.navigate_to_Craftsvilla()
+  Background:                     [90m# Search.feature:5[0m
+    [32mGiven [0m[32mNavigate to Craftsvilla[0m [90m# Login.navigate_to_Craftsvilla()[0m
 
   @Smoke_Scenario
-  Scenario: Search for a product                      # Search.feature:9
-    Given In craftsvialla page                        # Search.in_craftsvialla_page()
-    When In search, Enter the product to be searched  # Search.in_search_Enter_the_product_to_be_searched()
-    Then Searched product list page must be displayed # Search.searched_product_list_page_must_be_displayed()
+  Scenario: Search for a product                      [90m# Search.feature:9[0m
+    [32mGiven [0m[32mIn craftsvialla page[0m                        [90m# Search.in_craftsvialla_page()[0m
+    [32mWhen [0m[32mIn search, Enter the product to be searched[0m  [90m# Search.in_search_Enter_the_product_to_be_searched()[0m
+    [32mThen [0m[32mSearched product list page must be displayed[0m [90m# Search.searched_product_list_page_must_be_displayed()[0m

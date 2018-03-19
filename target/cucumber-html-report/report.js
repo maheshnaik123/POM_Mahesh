@@ -13,11 +13,11 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 16061934,
+  "duration": 71452935,
   "status": "passed"
 });
 formatter.before({
-  "duration": 730073,
+  "duration": 998998,
   "status": "passed"
 });
 formatter.background({
@@ -36,7 +36,7 @@ formatter.match({
   "location": "Login.navigate_to_Craftsvilla()"
 });
 formatter.result({
-  "duration": 70675203677,
+  "duration": 19217455014,
   "status": "passed"
 });
 formatter.scenario({
@@ -87,50 +87,50 @@ formatter.match({
   "location": "Login.click_on_Signup_link()"
 });
 formatter.result({
-  "duration": 5264095289,
+  "duration": 5429398436,
   "status": "passed"
 });
 formatter.match({
   "location": "Login.login_pop_up_must_be_displayed()"
 });
 formatter.result({
-  "duration": 5028693143,
+  "duration": 5151533512,
   "status": "passed"
 });
 formatter.match({
   "location": "Login.enterUsername()"
 });
 formatter.result({
-  "duration": 1791733008,
+  "duration": 2794221964,
   "status": "passed"
 });
 formatter.match({
   "location": "Login.enterPassword()"
 });
 formatter.result({
-  "duration": 2107951152,
+  "duration": 1944793086,
   "status": "passed"
 });
 formatter.match({
   "location": "Login.click_on_Login()"
 });
 formatter.result({
-  "duration": 59600452,
+  "duration": 248524854,
   "status": "passed"
 });
 formatter.match({
   "location": "Login.loginShouldBeSuccessful()"
 });
 formatter.result({
-  "duration": 48623023,
+  "duration": 43242554,
   "status": "passed"
 });
 formatter.after({
-  "duration": 10000488539,
+  "duration": 10000497446,
   "status": "passed"
 });
 formatter.after({
-  "duration": 10000031133,
+  "duration": 9999747514,
   "status": "passed"
 });
 formatter.uri("Search.feature");
@@ -148,11 +148,11 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 305508,
+  "duration": 300041,
   "status": "passed"
 });
 formatter.before({
-  "duration": 206295,
+  "duration": 213485,
   "status": "passed"
 });
 formatter.background({
@@ -171,7 +171,7 @@ formatter.match({
   "location": "Login.navigate_to_Craftsvilla()"
 });
 formatter.result({
-  "duration": 86262751805,
+  "duration": 14632476785,
   "status": "passed"
 });
 formatter.scenario({
@@ -207,29 +207,29 @@ formatter.match({
   "location": "Search.in_craftsvialla_page()"
 });
 formatter.result({
-  "duration": 37890207,
+  "duration": 53351584,
   "status": "passed"
 });
 formatter.match({
   "location": "Search.in_search_Enter_the_product_to_be_searched()"
 });
 formatter.result({
-  "duration": 10979671899,
+  "duration": 4940442659,
   "status": "passed"
 });
 formatter.match({
   "location": "Search.searched_product_list_page_must_be_displayed()"
 });
 formatter.result({
-  "duration": 74923,
+  "duration": 98873,
   "status": "passed"
 });
 formatter.after({
-  "duration": 9999945946,
+  "duration": 10000368123,
   "status": "passed"
 });
 formatter.after({
-  "duration": 9999804310,
+  "duration": 10000927493,
   "status": "passed"
 });
 });

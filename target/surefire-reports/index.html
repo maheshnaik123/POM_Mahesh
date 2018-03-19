@@ -102,12 +102,12 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="helperlib.TestRun" hash-for-method="feature(Login Test)">feature(Login Test)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.cucumber.runner.TestRunner" hash-for-method="feature(Search Test)">feature(Search Test)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="helperlib.TestRun" hash-for-method="feature(Search Test)">feature(Search Test)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Surefire_suite" title="com.cucumber.runner.TestRunner" hash-for-method="feature(Login Test)">feature(Login Test)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -125,25 +125,25 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">helperlib.TestRun</span>
+              <span class="class-name">com.cucumber.runner.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(Login Test)">
-                  </a> <!-- feature(Login Test) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Login Test)</span>
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="feature(Search Test)">
                   </a> <!-- feature(Search Test) -->
                   <span class="method-name">feature</span>
                   <span class="parameters">(Search Test)</span>
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="feature(Login Test)">
+                  </a> <!-- feature(Login Test) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Login Test)</span>
                   <em>
 (Runs Cucumber Feature)                  </em>
                 </div> <!-- method-content -->
@@ -158,10 +158,10 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot;&gt;
-  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Surefire test&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; verbose=&quot;0&quot; name=&quot;Surefire suite&quot; parallel=&quot;classes&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; verbose=&quot;0&quot; name=&quot;Surefire test&quot; parallel=&quot;classes&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;helperlib.TestRun&quot;/&gt;
+      &lt;class name=&quot;com.cucumber.runner.TestRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -212,17 +212,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
-data.setCell(0, 2, 'helperlib.TestRun')
-data.setCell(0, 3, 117297);
+data.setCell(0, 2, 'com.cucumber.runner.TestRunner')
+data.setCell(0, 3, 55462);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'feature')
-data.setCell(1, 2, 'helperlib.TestRun')
-data.setCell(1, 3, 105476);
+data.setCell(1, 2, 'com.cucumber.runner.TestRunner')
+data.setCell(1, 3, 39650);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -248,47 +248,55 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">helperlib.TestRun</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.cucumber.runner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">intialSetup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">18 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">267 ms</span>
+                <span class="method-start">582 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTestScenario</span>
-                <span class="method-start">512 ms</span>
+                <span class="method-start">763 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">feature(Login Test)</span>
-                <span class="method-start">14711 ms</span>
+                <span class="method-start">23159 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTestScenario</span>
-                <span class="method-start">120189 ms</span>
+                <span class="method-start">78622 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTestScenario</span>
-                <span class="method-start">122270 ms</span>
+                <span class="method-start">79390 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">feature(Search Test)</span>
-                <span class="method-start">126203 ms</span>
+                <span class="method-start">86426 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterTestScenario</span>
-                <span class="method-start">243501 ms</span>
+                <span class="method-start">126076 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">245822 ms</span>
+                <span class="method-start">128187 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">245870 ms</span>
+                <span class="method-start">128188 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">endSetup</span>
+                <span class="method-start">129121 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test name="Test">
   <classes>
-  	<class name="helperlib.TestRun"></class>
+  	<class name="com.cucumber.runner.TestRunner"></class>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+
